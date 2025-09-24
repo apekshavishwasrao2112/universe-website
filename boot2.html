@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <style>
+      body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url(bgGalaxy.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+      }
+      .navbar-brand{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+      }
+      .box{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 10px;
+        margin-left: 100px;
+        margin-top: 100px;
+        
+
+      }
+
+      #space{
+     
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 100px;
+        margin-top: 100px;
+      }
+
+      @media screen and (max-width: 1188px){
+        .box{
+            margin-left: 50px;
+          }
+        
+      }
+     
+     </style>
+</head>
+<body>
+    <nav class="navbar bg-body-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Welcome To Universe</a>
+    <button style="background-color: rgb(255, 243, 243); " class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Space Station</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="boot2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://science.nasa.gov/universe/galaxies/">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Space Set
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://science.nasa.gov/universe/">Universe</a></li>
+              <li><a class="dropdown-item" href="https://science.nasa.gov/universe/black-holes/">Black Hole</a></li>
+              <li><a class="dropdown-item" href="https://science.nasa.gov/universe/stars/">Stars</a></li>
+              <li><a class="dropdown-item" href="https://science.nasa.gov/exoplanets/">Exoplanets</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Cursor -->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="uni.jpeg" class="d-block w-100" style="height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Universe</h5>
+        <p>The universe is everything that exists — space, time, matter, and energy. It is vast, expanding constantly, and contains billions of galaxies, each with countless stars and planets.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="black hole.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Black Hole</h5>
+        <p>A black hole is a region in space where gravity is so strong that nothing, not even light, can escape. </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="exoplanets.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Exoplanets</h5>
+        <p>Exoplanets are planets that orbit stars outside our solar system. Some may have conditions suitable for life, making them an exciting area of research in astronomy.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="stars.jpeg" class="d-block w-100" style="height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Stars</h5>
+        <p>Stars are giant balls of hot gases, mainly hydrogen and helium, that produce light and energy through nuclear fusion. They are the building blocks of galaxies and come in different sizes and colors.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Cards -->
+
+<div class="box">
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="black hole.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Black Hole</h5>
+    <p class="card-text">A black hole is a region in space where gravity is so strong that nothing, not even light, can escape. A black hole is a region of space with extremely strong gravity.Formed when massive stars collapse after their life cycle.Nothing, not even light, can escape from it. <br> </p>
+    <a href="https://science.nasa.gov/universe/black-holes/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="stars.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Stars</h5>
+    <p class="card-text">Stars are giant balls of hot gases, mainly hydrogen and helium, that produce light and energy through nuclear fusion. They shine due to nuclear fusion, converting hydrogen into helium. They are the building blocks of galaxies and come in different sizes and colors. Stars vary in size, temperature.</p>
+    <a href="https://science.nasa.gov/universe/stars/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="uni.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Universe</h5>
+    <p class="card-text">The universe is everything that exists — space, time, matter, and energy. It is vast, expanding constantly, and contains billions of galaxies, each with countless stars and planets.It began with the Big Bang about 13.8 billion years ago.
+
+Contains billions of galaxies, stars, planets, and cosmic structures.</p>
+    <a href="https://science.nasa.gov/universe/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="exoplanets.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Exoplanets</h5>
+    <p class="card-text">Exoplanets are planets that orbit stars outside our solar system. Some may have conditions suitable for life, making them an exciting area of research in astronomy.Some exoplanets are located in the habitable zone, where conditions might allow liquid water and possibly life.</p>
+    <a href="https://science.nasa.gov/exoplanets/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="e2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Exoplanets Catalog</h5>
+    <p class="card-text">This exoplanetary encyclopedia — continuously updated, with more than 5,900 entries — combines interactive 3D models and detailed data on all confirmed exoplanets. When you select a planet’s name, see a visualization of each world and system, along with vital statistics. </p>
+    <a href="https://science.nasa.gov/exoplanets/exoplanet-catalog/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<!-- cards -->
+ <div class="card" style="width: 18rem;">
+  <img src="habitable.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">The Habitable Zone</h5>
+    <p class="card-text">The definition of “habitable zone” is the distance from a star at which liquid water could exist on orbiting planets’ surfaces. Habitable zones are also known as “Goldilocks zones,” where conditions might be just right — not too hot, not too cold — for life.  </p>
+    <a href="https://science.nasa.gov/exoplanets/habitable-zone/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+</div>
+
+<hr>
+<!-- rough -->
+
+
+
+
+
+
+<!-- rough -->
+<h1 style="color: whitesmoke; text-align: center; font-weight: bolder;">Space Centers</h1>
+
+<div id="space">
+<!-- note  -->
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+    NASA Kennedy Space Center (USA)
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+    <div class="card card-body" style="width: 300px;">
+      Located in Florida.
+Main launch site for Apollo missions and Space Shuttle.
+Currently used for Artemis program (Moon missions).
+      </div>
+  </div>
+</div>
+<!-- note  -->
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+    ISRO (Indian Space Research Organisation)
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+    <div class="card card-body" style="width: 300px;">
+      ISRO (Indian Space Research Organisation) is India’s national space agency, founded in 1969 by Dr. Vikram Sarabhai.
+Headquartered at Bengaluru, Karnataka.Works on space research, rocket launches, satellites, planetary missions, and applications in communication, weather, and navigation.
+       </div>
+  </div>
+</div>
+<!-- note  -->
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+    Tanegashima Space Center (Japan)
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+    <div class="card card-body" style="width: 300px;">
+      Tanegashima Space Center is Japan’s main spaceport, handling rocket launches, satellite missions, and supporting international space projects. Plays a key role in launching satellites for Japan and other countries.
+     </div>
+  </div>
+</div>
+<!-- note  -->
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample4">
+    Vostochny Cosmodrome (Russia)
+  </button>
+</p>
+<div  id="p4" style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+    <div class="card card-body" style="width: 300px;">
+      The Vostochny Cosmodrome is Russia’s newest spaceport, built to replace reliance on Baikonur, and is set to become a hub for satellite launches and future crewed missions. Designed to eventually host satellite launches, planetary missions, and human spaceflights.
+     </div>
+  </div>
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+  
+</html>
