@@ -1,9 +1,9 @@
 const facts = [
-  'The universe is still expanding, and galaxies are moving farther apart every second.',
-  'A black hole can bend light so strongly that it acts like a cosmic lens.',
-  'Some exoplanets orbit in the habitable zone, where liquid water could exist.',
-  'Stars are born in giant clouds of gas and dust called nebulae.',
-  'Our Sun is a medium-sized star, but it appears huge because it is so close to Earth.'
+  'Artemis aims to return astronauts to the Moon and build the foundation for long-term lunar exploration.',
+  'Mars missions are studying ancient riverbeds and rocks to understand whether life ever existed there.',
+  'Europa Clipper will investigate whether Jupiter’s moon Europa has the ingredients for life.',
+  'The James Webb Space Telescope is revealing distant stars, planets, and early galaxies with unprecedented detail.',
+  'Launch sites such as Kennedy and Vostochny make modern deep-space missions possible every year.'
 ];
 
 const themeToggle = document.getElementById('themeToggle');

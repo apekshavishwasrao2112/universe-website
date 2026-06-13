@@ -16,27 +16,33 @@
         <div class="brand-mark" aria-hidden="true"></div>
         <div class="brand-copy">
           <h1>Universe Explorer</h1>
-          <p>Interactive space discoveries, live facts, and launch sites.</p>
+          <p>Mission highlights, launch sites, and cosmic discoveries.</p>
         </div>
       </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link active" href="#missions">Missions</a>
+        <a class="nav-link" href="#discover">Highlights</a>
+        <a class="nav-link" href="#launches">Launch Sites</a>
+        <a class="nav-link" href="#facts">Mission Facts</a>
+      </nav>
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">☀️ Light mode</button>
-        <a class="ghost-btn" href="#discover">Explore</a>
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">🌙 Dark mode</button>
+        <a class="ghost-btn" href="#missions">Mission pulse</a>
       </div>
     </header>
 
     <section class="hero-grid">
-      <article class="hero-card glass-card">
-        <span class="kicker">Live cosmic tour</span>
-        <h2>See the universe in motion with a brighter, more interactive experience.</h2>
+      <article class="hero-card glass-card" id="missions">
+        <span class="kicker">Space mission overview</span>
+        <h2>Launch into the next era of lunar, Mars, and deep-space exploration.</h2>
         <p>
-          This updated page blends immersive visuals, quick facts, theme switching, a live clock,
-          and searchable space content to make the website feel more alive and engaging.
+          Follow the missions pushing humanity farther into the solar system — from Artemis and Mars rovers to Europa surveys and launch sites that make the journey possible.
         </p>
         <div class="hero-pills">
-          <span class="pill">🌌 Galactic facts</span>
-          <span class="pill">🔭 NASA links</span>
-          <span class="pill">✨ Interactive cards</span>
+          <span class="pill">🌙 Artemis</span>
+          <span class="pill">🔴 Mars</span>
+          <span class="pill">🛰️ Europa</span>
+          <span class="pill">🚀 Launch sites</span>
         </div>
         <a class="glow-btn" href="#discover">Start exploring</a>
         <div class="stat-grid">
@@ -46,16 +52,16 @@
         </div>
       </article>
 
-      <aside class="info-card glass-card">
+      <aside class="info-card glass-card" id="facts">
         <div class="fact-box">
-          <strong>Today’s fact</strong>
-          <p id="factText">Loading a space fact…</p>
+          <strong>Mission fact</strong>
+          <p id="factText">Loading a mission fact…</p>
         </div>
         <div class="fact-box">
-          <strong>What changed</strong>
-          <p>The page now includes smooth visuals, stronger CSS, a theme toggle, live fact rotation, and search-based filtering for the content cards.</p>
+          <strong>Mission pulse</strong>
+          <p>Artemis aims to return astronauts to the Moon, while Mars and Europa missions search for signs of ancient life and ocean worlds beyond Earth.</p>
         </div>
-        <button id="factButton" class="glow-btn" type="button">Generate another fact</button>
+        <button id="factButton" class="glow-btn" type="button">Show another mission fact</button>
       </aside>
     </section>
 
@@ -130,15 +136,17 @@
 
     <section class="section mission-grid">
       <article class="glass-card list-card">
-        <h3>Why this version feels better</h3>
+        <h3>Space missions in focus</h3>
+        <p style="color: var(--muted);">These missions are shaping the next chapter of exploration across the Moon, Mars, and icy moons.</p>
         <ul>
-          <li>Custom CSS gives the page a polished, modern look.</li>
-          <li>Interactive JavaScript adds live facts, a clock, and filtering.</li>
-          <li>Better content organization makes the journey easier to scan.</li>
+          <li>Artemis: sending astronauts back to the lunar surface.</li>
+          <li>Perseverance: studying ancient Martian habitats.</li>
+          <li>Europa Clipper: tracing signs of a hidden ocean world.</li>
+          <li>JWST: unlocking the secrets of distant stars and planets.</li>
         </ul>
       </article>
 
-      <article class="glass-card list-card">
+      <article class="glass-card list-card" id="launches">
         <h3>Quick launch highlights</h3>
         <p style="color: var(--muted);">Tap each center to reveal a quick description.</p>
         <div class="center-grid">
@@ -162,7 +170,6 @@
       </article>
     </section>
 
-    <p class="footer-note">Updated for a more interactive, polished experience with HTML, CSS, and JavaScript.</p>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

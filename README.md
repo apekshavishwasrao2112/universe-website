@@ -2,20 +2,20 @@
 
 # 🌌 Universe Explorer
 
-A polished, interactive space website that showcases cosmic topics with a modern visual design, live facts, theme switching, and searchable content cards. The site is built with HTML, CSS, JavaScript, and Bootstrap.
+A polished, mission-focused space website that highlights lunar, Mars, and deep-space discoveries through a modern interface, live mission facts, theme switching, and interactive navigation. The project is built with HTML, CSS, JavaScript, and Bootstrap.
 
 ---
 
 ## 🚀 Features
 
 * Fully **responsive design** for desktop and mobile
-* Modern glass-style visuals and improved space-themed layout
+* Mission-themed visuals with a glass-style interface and polished navigation
 * Interactive JavaScript features such as:
-  * live clock
-  * random space fact generator
+  * live mission fact rotation
   * theme toggle (light/dark)
-  * searchable discovery cards
-* Links to official NASA resources for deeper exploration
+  * searchable space cards
+  * dynamic navigation states for a more engaging feel
+* Content centered on Artemis, Mars, Europa, and launch-site exploration
 
 ---
 
@@ -43,6 +43,10 @@ You can also view the deployed version here:
 
 [Visit Universe Website](https://apekshavishwasrao2112.github.io/universe-website/)
 
+If you want to preview the site locally, run the server command above and open:
+
+http://localhost:3000/
+
 ---
 
 ## 📚 Technologies Used
@@ -59,7 +63,7 @@ You can also view the deployed version here:
 ## 💡 What You Can Learn From This Project
 
 * Front-end design and responsive layout techniques
-* Interactive JavaScript for live content and user controls
+* Interactive JavaScript for mission-focused content and user controls
 * How to structure a simple static site with reusable assets
 * How to publish and update a website using GitHub Pages
 
