@@ -1,29 +1,45 @@
 
 
-# 🌌 Universe Website
+# 🌌 Universe Explorer
 
-A **responsive, interactive website** showcasing space content with links to **official NASA pages**. Built with **HTML, CSS, JavaScript, and Bootstrap**, and deployed live using **GitHub Pages** with a simple **DevOps workflow**.
+A polished, interactive space website that showcases cosmic topics with a modern visual design, live facts, theme switching, and searchable content cards. The site is built with HTML, CSS, JavaScript, and Bootstrap.
 
 ---
 
 ## 🚀 Features
 
-* Fully **responsive design** — works seamlessly on desktop and mobile
-* Styled using **Bootstrap** for a modern look and feel
-* Integrated **official NASA pages** via `<a>` links to give users direct access to authentic resources 🌌
-* **Automated deployment** with GitHub Actions for continuous delivery
+* Fully **responsive design** for desktop and mobile
+* Modern glass-style visuals and improved space-themed layout
+* Interactive JavaScript features such as:
+  * live clock
+  * random space fact generator
+  * theme toggle (light/dark)
+  * searchable discovery cards
+* Links to official NASA resources for deeper exploration
 
 ---
 
-## 💻 DevOps Workflow
+## ▶️ How to Run It Locally
 
-1. **Code Management:** Project is managed on **GitHub** with version control
-2. **Automated Deployment:** Configured **GitHub Actions** to automatically deploy updates to **GitHub Pages** whenever changes are pushed
-3. **Live Website:** Ensures the latest version is always live without manual intervention
+1. Open the project folder in VS Code.
+2. Start a simple local server:
+   ```bash
+   python -m http.server 3000
+   ```
+   If Python is not found, use:
+   ```bash
+   py -m http.server 3000
+   ```
+3. Open your browser at:
+   ```text
+   http://localhost:3000/
+   ```
 
 ---
 
 ## 🌐 Live Website
+
+You can also view the deployed version here:
 
 [Visit Universe Website](https://apekshavishwasrao2112.github.io/universe-website/)
 
@@ -36,15 +52,16 @@ A **responsive, interactive website** showcasing space content with links to **o
 * JavaScript
 * Bootstrap
 * Git & GitHub
-* GitHub Actions (CI/CD)
+* GitHub Pages
 
 ---
 
-## 💡 Learning Outcomes
+## 💡 What You Can Learn From This Project
 
-* Built skills in **frontend development and responsive design**
-* Learned how to **integrate external authoritative resources** responsibly
-* Practiced **automated DevOps deployment** using GitHub Actions
+* Front-end design and responsive layout techniques
+* Interactive JavaScript for live content and user controls
+* How to structure a simple static site with reusable assets
+* How to publish and update a website using GitHub Pages
 
 ---
 
@@ -57,8 +74,9 @@ Universe/
 ├─ style.css
 ├─ script.js
 ├─ README.md
-├─ .github/
-│   └─ workflows/
-│       └─ deploy.yml
+├─ assets/images (space visuals)
+└─ .github/
+    └─ workflows/
+        └─ deploy.yml
 ```
 
