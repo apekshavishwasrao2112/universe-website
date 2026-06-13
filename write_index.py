@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -169,3 +171,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+'''
+
+Path('index.html').write_text(html, encoding='utf-8')
+print('Updated index.html')
